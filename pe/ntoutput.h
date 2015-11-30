@@ -79,7 +79,6 @@ ostream &operator<<(ostream &os, const IMAGE_DATA_DIRECTORY dir[IMAGE_NUMBEROF_D
 	return os;
 }
 
-//#define oh(members) (is64 ? ntHdrs64.OptionalHeader members : ntHdrs32.OptionalHeader members)
 ostream &operator<<(ostream &os, const IMAGE_NT_HEADERS32 &hdr)
 {
 	const IMAGE_OPTIONAL_HEADER32 &oh = hdr.OptionalHeader;
